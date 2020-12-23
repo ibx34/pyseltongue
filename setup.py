@@ -4,6 +4,9 @@ import re
 with open("requirements.txt") as f:
     requirements = f.readlines()
 
+with open('README.md') as f:
+    readme = f.read()
+
 setup(
     name="Pyseltoungue",
     version="0.0.1",
@@ -12,6 +15,7 @@ setup(
     license="MIT",
     include_package_data=True,
     install_requires=requirements,
+    long_description=readme,
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
