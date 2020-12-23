@@ -1,10 +1,9 @@
 from setuptools import setup
-import re
 
 with open("requirements.txt") as f:
     requirements = f.readlines()
 
-with open('README.md') as f:
+with open('README.MD') as f:
     readme = f.read()
 
 setup(
